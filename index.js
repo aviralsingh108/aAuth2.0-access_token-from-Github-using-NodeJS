@@ -31,7 +31,7 @@ app.get("/oauth-callback", ({ query: { code } }, res) => {
       // eslint-disable-next-line no-console
       console.log("My token:", token);
 
-      res.redirect(`/?token=${token}`);
+      res.redirect(`/?token=1`);
     })
     .catch((err) => res.status(500).json({ err: err.message }));
 });
